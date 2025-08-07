@@ -1,9 +1,9 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID: -//MIUI-Based Supplement//Solar Calendar//CN
+PRODID: -//IOS Calendar Supplement//Solar Calendar//CN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:日历补充
-X-WR-CALDESC:基于MIUI对公历节日/纪念日的补充
+X-WR-CALDESC:对IOS日历的公历节日/纪念日的补充
 X-WR-TIMEZONE:Asia/Shanghai
 
 BEGIN:VEVENT
