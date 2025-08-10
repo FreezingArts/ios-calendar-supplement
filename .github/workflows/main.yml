@@ -1,8 +1,8 @@
 name: Update Solar Terms ICS
 
 on:
-  # schedule:
-  #   - cron: "0 0 * * *"  # 每天 0 点 UTC 执行（北京时间 8:00）
+  schedule:
+    - cron: "0 0 1 1 *"  # 每年1.1执行（北京时间早上8点更新，不想再计算加一年了就这吧，需求大了再改吧）
   workflow_dispatch:      # 手动触发
   
 permissions:
