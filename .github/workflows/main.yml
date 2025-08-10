@@ -1,0 +1,44 @@
+name: Update Solar Terms ICS
+
+on:
+  # schedule:
+  #   - cron: "0 0 * * *"  # 每天 0 点 UTC 执行（北京时间 8:00）
+  workflow_dispatch:      # 手动触发
+  
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      APIURL: ${{ secrets.APIURL }}
+      APPKEY: ${{ secrets.APPKEY }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run script
+        run: python auto_update.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add ics-files/SolarTermsDateAndTime.ics
+          git commit -m "Auto update Solar Terms ICS" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
