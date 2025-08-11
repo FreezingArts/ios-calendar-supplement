@@ -5,67 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>节日订阅</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            height: 100%;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
-
-        body {
-            background-image: url("https://bing.shangzhenyang.com/api/1080p");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 20px;
-            padding: 40px;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.25);
-            backdrop-filter: blur(12px);
-            border-radius: 16px;
-            padding: 24px 32px;
-            max-width: 400px;
-            text-align: center;
-            color: #000;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-        }
-
-        .card h2 {
-            font-size: 1.8em;
-            margin-bottom: 12px;
-        }
-
-        .card p {
-            font-size: 1em;
-            margin-bottom: 20px;
-        }
-
-        .copy-button {
-            padding: 10px 20px;
-            background-color: #007aff;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 1em;
-            cursor: pointer;
-        }
-
-        .copy-button:hover {
-            background-color: #005fcc;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -74,13 +14,16 @@
         <p>此订阅链接将母亲节与父亲节导入到 iOS 日历中。</p>
         <button class="copy-button" onclick="copyLink('china_parents_days.ics')">复制订阅链接</button>
     </div>
-
     <div class="card">
         <h2>日历的内容补充订阅</h2>
         <p>根据对比 MIUI 自带日历，补充添加 iOS 日历中缺少的节日/纪念日（包含中西方节日）。<br>⚠️ 包含母亲节父亲节，可能与上面订阅重复。</p>
         <button class="copy-button" onclick="copyLink('calendar-supplement.ics')">复制订阅链接</button>
     </div>
-
+    <div class="card">
+        <h2>节气时间增补订阅</h2>
+        <p>此订阅链接将在 iOS 日历中增加缺失的节气的具体时间，使您的日历更加完整。<br>🟢 与上面无任何关联，可共同订阅</p>
+        <button class="copy-button" onclick="copyLink('solar_terms.ics')">复制订阅链接</button>
+    </div>
     <script>
         function copyLink(fileName) {
             const baseUrl = location.origin;
@@ -93,6 +36,5 @@
         }
     </script>
 </body>
-
 
 </html>
