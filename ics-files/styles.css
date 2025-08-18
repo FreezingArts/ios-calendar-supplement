@@ -11,12 +11,12 @@ body {
 }
 
 body {
-    background-image: url("https://bing.shangzhenyang.com/api/1080p");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    /*background-image: url("https://bing.shangzhenyang.com/api/1080p");*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
     flex-direction: column;
     gap: 20px;
