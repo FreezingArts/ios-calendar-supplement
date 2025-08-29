@@ -1,12 +1,12 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//liquidizer.top//Parents Days//CN
+PRODID:-//cliboy//Parents Days//CN
 CALSCALE:GREGORIAN
 
 BEGIN:VEVENT
 UID:20250511-mothers-day@holidays.cn
 SUMMARY:母亲节
-DTSTART;VALUE=DATE:9080510
+DTSTART;VALUE=DATE:19080510
 RRULE:FREQ=YEARLY;BYMONTH=5;BYDAY=2SU
 DESCRIPTION: 母亲节，是一个感恩母亲的节日。母亲们在这一天通常会收到礼物，康乃馨被视为献给母亲的花，而中国的母亲花是萱草花，又叫忘忧草。
 END:VEVENT
