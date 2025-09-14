@@ -104,7 +104,7 @@ DESCRIPTION:九一八事变是由日本蓄意制造并发动的侵华战争，�
 END:VEVENT
 
 BEGIN:VEVENT
-UID:programmers-day-1024@techdays.cn
+UID:programmers-day-1024@holidays.cn
 SUMMARY:中国程序员节
 DTSTART;VALUE=DATE:20101024
 RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=24
